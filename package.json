@@ -1,0 +1,25 @@
+{
+  "name": "@codewell/catalyst",
+  "version": "0.0.1",
+  "description": "React context state management",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codewell/catalyst.git"
+  },
+  "keywords": [
+    "react",
+    "context",
+    "reducer",
+    "state"
+  ],
+  "author": "Filip Johansson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codewell/catalyst/issues"
+  },
+  "homepage": "https://github.com/codewell/catalyst#readme"
+}
