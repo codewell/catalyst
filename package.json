@@ -1,6 +1,6 @@
 {
   "name": "@codewell/catalyst",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React context state management",
   "main": "src/index.js",
   "scripts": {
