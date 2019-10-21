@@ -1,5 +1,5 @@
 const reducer = require('./reducer');
-const CatalystContext = require('./context');
+const CatalystContext = require('./CatalystContext');
 
 const Catalyst = React => ({
   initialState,
