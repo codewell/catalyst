@@ -1,5 +1,5 @@
 const automaticActionSwitch = require('@codewell/automatic-action-switch');
-const stateLogger = require('./@codewell/state-logger');
+const stateLogger = require('@codewell/state-logger');
 
 /**
  * Automatic reducer for React contexts
