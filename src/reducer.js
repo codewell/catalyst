@@ -8,7 +8,7 @@ const stateLogger = require('@codewell/state-logger');
  */
 const reducer = (state, action) => {
   // Get next state from the actionSwitch
-  const nextState = automaticActionSwitch(state, action);
+  const nextState = automaticActionSwitch()(state, action);
 
   // Log state action and next state in dev mode
   stateLogger(state, action, nextState);

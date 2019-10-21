@@ -1,17 +1,23 @@
 const reducer = require('./reducer');
-const CatalystContext = require('./CatalystContext');
 
-const Catalyst = React => ({
-  initialState,
-  children,
-}) => {
-  const [state, dispatch] = useReducer(reducer, initialState);
-  return React.createElement(CatalystContext.Provider, {
-    value: {
-      state,
-      dispatch
-    }
-  }, children);
+const Catalyst = React => {
+  const CatalystContext = React.createContext();
+
+  const CatalystProvider = ({ initialState, children }) => {
+    const [state, dispatch] = React.useReducer(reducer, initialState);
+    return React.createElement(CatalystContext.Provider, {
+      value: {
+        state,
+        dispatch
+      }
+    }, children);
+  };
+
+  return {
+    CatalystProvider,
+    CatalystContext,
+  };
+
 };
 
 module.exports = Catalyst;
