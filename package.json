@@ -27,6 +27,6 @@
   },
   "dependencies": {
     "@codewell/automatic-action-switch": "^1.0.0",
-    "@codewell/state-logger": "0.0.1"
+    "@codewell/state-logger": "0.0.2"
   }
 }
